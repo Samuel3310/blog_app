@@ -7,6 +7,7 @@ import Signin from "./pages/signin";
 import Signup from "./pages/signup";
 import Project from "./pages/project";
 import Header from "./components/header";
+import FooterCom from "./components/footer";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/project" element={<Project />} />
         <Route path="*" element={<h1>404 Not Found</h1>} />
       </Routes>
+      <FooterCom />
     </BrowserRouter>
   );
 };
