@@ -16,8 +16,13 @@ mongoose
 
 app.use(express.json());
 
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Methods", "GET, POST,PATCH,PUT, DELETE");
+  next();
+});
 app.use("/api/user", UserRouter);
-app.use("/api/user", authRoute);
+app.use("/api/auth", authRoute);
 
 app.listen(4000, (req, res) => {
   console.log("Server listening on port 4000");
