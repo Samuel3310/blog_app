@@ -7,6 +7,7 @@ import {
 } from "../../store/user/userSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
+import Oauth from "../../components/oauth";
 
 const Signup = () => {
   const [formData, setFormData] = useState({});
@@ -112,6 +113,7 @@ const Signup = () => {
                 "Sign Up"
               )}
             </Button>
+            <Oauth />
           </form>
           <div className="flex gap-5 mt-5">
             <span>Have an account?</span>

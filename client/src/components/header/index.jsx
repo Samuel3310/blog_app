@@ -5,6 +5,7 @@ import { FaMoon } from "react-icons/fa";
 
 const Header = () => {
   const { pathname } = useLocation();
+
   return (
     <Navbar className="border-b-2 p-2 flex justify-between items-center">
       <Link
