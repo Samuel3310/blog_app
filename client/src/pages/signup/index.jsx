@@ -63,7 +63,7 @@ const Signup = () => {
             </span>
             Blog
           </Link>
-          <p className="text-sm mt-5">
+          <p className="text-sm mt-5 dark:text-gray-300">
             Welcome to Sam&apos;s Blog. You can sign up with your email and
             password or with Google.
           </p>
@@ -116,7 +116,7 @@ const Signup = () => {
             <Oauth />
           </form>
           <div className="flex gap-5 mt-5">
-            <span>Have an account?</span>
+            <span className="dark:text-gray-300">Have an account?</span>
             <Link to="/signin" className="text-blue-500">
               Sign In
             </Link>

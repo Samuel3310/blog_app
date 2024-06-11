@@ -53,7 +53,7 @@ export default function SignIn() {
             </span>
             Blog
           </Link>
-          <p className="text-sm mt-5">
+          <p className="text-sm mt-5 dark:text-gray-300">
             This is a demo project. You can sign in with your email and password
             or with Google.
           </p>
@@ -97,7 +97,7 @@ export default function SignIn() {
             <Oauth />
           </form>
           <div className="flex gap-2 text-sm mt-5">
-            <span>Dont Have an account?</span>
+            <span className="dark:text-gray-300">Dont Have an account?</span>
             <Link to="/sign-up" className="text-blue-500">
               Sign Up
             </Link>
